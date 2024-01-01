@@ -1,5 +1,5 @@
 const yourDate = new Date('2023-01-01T00:00:00'),
-  music = ['ido', 'noinaycoanh', 'nguoiamphu'];
+  music = ['noinaycoanh'];
 
 document.addEventListener(
   'DOMContentLoaded',
@@ -33,11 +33,7 @@ document.addEventListener(
     }, 1000);
     document
       .querySelector('audio')
-      .setAttribute(
-        'src',
-        `music/${music[Math.floor(Math.random() * music.length)]}.mp3`
-      );
-
+      .setAttribute('src', `music/${music[0]}.mp3`);
     document
       .getElementsByTagName('body')[0]
       .insertAdjacentHTML('beforeend', "<div id='mask'></div>");

@@ -8,6 +8,20 @@ body {
   background-repeat: no-repeat !important;
   background-attachment: fixed !important;
   background-position: center !important;
+  border-radius: 32px !important;
+  -webkit-border-radius: 32px !important;
+  -moz-border-radius: 32px !important;
+  -ms-border-radius: 32px !important;
+  -o-border-radius: 32px !important;
+}
+.alert-popup-confirmButton {
+  background: transparent !important;
+  border: 1px solid #716add !important;
+  border-radius: 50% !important;
+  -webkit-border-radius: 50% !;
+  -moz-border-radius: 50% !;
+  -ms-border-radius: 50% !;
+  -o-border-radius: 50% !;
 }
 img {
   max-width: 100%;
