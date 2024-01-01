@@ -1,6 +1,9 @@
 const yourDate = new Date('2023-01-01T00:00:00'),
   music = ['noinaycoanh'];
 
+window.days = Math.floor(
+  Math.floor((new Date() - yourDate) / 1000) / 60 / 60 / 24
+);
 document.addEventListener(
   'DOMContentLoaded',
   function () {
@@ -28,15 +31,14 @@ document.addEventListener(
       }:${sec > 9 ? sec : '0' + sec}`;
     }
     olock();
+
     var timer = setInterval(function () {
       olock();
     }, 1000);
+
     document
       .querySelector('audio')
       .setAttribute('src', `music/${music[0]}.mp3`);
-    document
-      .getElementsByTagName('body')[0]
-      .insertAdjacentHTML('beforeend', "<div id='mask'></div>");
   },
   false
 );

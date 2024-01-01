@@ -8,11 +8,13 @@
 	<link rel="stylesheet" href="style.css">
 	<link rel="shortcut icon" type="image/png" href="img/favicon.png" />
 	<title>Together</title>
+	<script src="app.js"></script>
+	<script src="animation.js"></script>
 </head>
 
 <body>
 	<div id="wrapper">
-		<h1>LOVE DAYS</h1>
+		<h1>We're together</h1>
 
 		<div id="clock-box">
 			<div id="clock">
@@ -24,14 +26,18 @@
 		<div id="info">
 			<div class="one">
 				<img src="img/leo.jpeg" class="avt">
-				<p>Leo</p>
+				<p class="name_title">@leo</p>
 			</div>
 			<div id="heart">
 				❤<anni>One Year!!!</anni>
 			</div>
 			<div class="two">
 				<img src="img/cinhcinh.jpeg" class="avt">
-				<p>cinhcinhlalala</p>
+				<p class="name_title">@cinhcinhlalala</p>
+			</div>
+			<div class="pyro">
+				<div class="before"></div>
+				<div class="after"></div>
 			</div>
 		</div>
 
@@ -40,8 +46,6 @@
 		</div>
 		<footer>Thank you for your love 💕</footer>
 	</div>
-
-	<script src="app.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 	<script>
 		let a = Swal.mixin({
@@ -65,7 +69,7 @@
     no-repeat
   `
 		});
-		a.fire()
+		if (+window.days <= 366) a.fire()
 	</script>
 </body>
 
